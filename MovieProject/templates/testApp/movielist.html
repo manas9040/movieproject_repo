@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css"%}">
+    <link rel="stylesheet" href="{% static "css/movie.css"%}">
+  </head>
+  <body>
+    <div class="container" align="center">
+      <h1>NEW RELEASED MOVIE INFORMATION</h1>
+      {% if movie_list %}
+      <table>
+        <thead>
+          <th>MOVIENAME</th>
+          <th>RELEASEDATE</th>
+          <th>ACTOR </th>
+          <th>ACTRESS</th>
+          <th>RATING</th>
+        </thead>
+        {% for movie in movie_list %}
+        <tr>
+          <td>{{movie.moviename}}</td>
+          <td>{{movie.releasedate}}</td>
+          <td>{{movie.actor}}</td>
+          <td>{{movie.actress}}</td>
+          <td>{{movie.rating}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {%else%}
+      <p>No movie informations available..</p>
+      {% endif %}
+
+
+    </div>
+
+  </body>
+</html>

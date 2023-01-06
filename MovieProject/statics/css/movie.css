@@ -1,0 +1,48 @@
+body{
+  background:#85c20a;
+
+}
+h1{
+  color:white;
+  background: #b32e5d;
+  text-align: center;
+}
+.jumbotron a {
+  margin-left: 5px;
+}
+
+.container .jumbotron{
+  background:#7a0587;
+  margin-top:150px;
+  border: 20px inset orange;
+
+}
+thead th{
+  color: white;
+  background: #0ac2b3;
+  font-size: 20px;
+  margin: auto;
+  border: 3px red solid;
+  text-align: center;
+
+
+
+}
+table tr td{
+  border: 3px solid blue;
+  background: #b32e5d;
+  color: yellow;
+  font-weight: bold;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+
+
+}
+p{
+  color:#fd7e14;
+}
+ label{
+  color:blue;
+  font-weight: bold;
+}
